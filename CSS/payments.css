@@ -1,0 +1,278 @@
+/***************General********************/
+* {
+    box-sizing: border-box;
+}
+
+.payments_body {
+    margin: 0 auto;
+    padding: 0;
+    background: #f2f2f2;
+    max-width: 90vw;
+    font-size: 16px;
+}
+
+/*******************Heading Styling*********************/
+.payments_heading-style,
+.payments_heading-style2,
+.payments_heading-style3 {
+    position: relative;
+    z-index: 1;
+}
+
+.payments_heading-style:before,
+.payments_heading-style2:before,
+.payments_heading-style3:before {
+    content: "";
+    margin: 0;
+    position: absolute;
+    top: 33%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.payments_heading-style:before {
+    border-top: 23px solid #F6DC7A;
+    width: 100%;
+}
+
+.payments_heading-style2:before {
+    border-top: 23px solid #05e5e5;
+    width: 100%
+}
+
+.payments_heading-style3:before {
+    border-top: 23px solid #ff4e4e;
+    width: 25%;
+}
+
+.playlist-page__create h3 {
+    margin-left: 5px;
+}
+
+/***********Button Stylings**************/
+.btn1,
+.btn2 {
+    border: none;
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.btn1 {
+    color: white;
+    border: solid 1.5px #ff2222;
+    background-color: #ff2222;
+}
+
+.btn1:hover {
+    background-color: white;
+    color: #ff2222;
+    border: solid 1.5px #ff2222;
+}
+
+.btn2 {
+    color: white;
+    border: solid 1.5px #05E5E5;
+    background-color: #05E5E5;
+}
+
+.btn2:hover {
+    background-color: white;
+    color: #05E5E5;
+    border: solid 1.5px #05E5E5;
+}
+
+/******************Payment Icons********************/
+.fab {
+    font-size: 3em;
+}
+
+.fa-cc-amex {
+    color: #007bc1;
+}
+
+.fa-cc-visa {
+    color: #0157a2;
+}
+
+.fa-cc-mastercard {
+    color: #0a3a82;
+}
+
+.fa-cc-paypal {
+    color: #253b80;
+}
+
+#payment__form {
+    display: flex;
+    flex-flow: column;
+}
+
+.payment-method label {
+    display: flex;
+}
+
+.payment-method label input {
+    margin-right: 30px;
+}
+
+.payment-method label i {
+    margin-right: 5px;
+}
+
+.payment-method__credit,
+.payment-method__paypal {
+    background: white;
+    padding: 10px 15px;
+    margin: 0 auto;
+    width: 80vw;
+}
+
+.credit__info {
+    margin: 0 auto;
+}
+
+.payment-method__credit div {
+    margin-bottom: 10px;
+}
+
+.payment-method__credit input {
+    padding: 10px 5px;
+    font-size: 1.1em;
+}
+
+div[class^="credit"] {
+    display: flex;
+    flex-direction: column;
+}
+
+.payments_row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.payments_row input {
+    width: 150px;
+}
+
+.payment-method__paypal {
+    display: none;
+}
+
+.payment-method {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.stripe-button-el,
+#paypal-submit,
+#credit-submit {
+    float: right;
+}
+
+
+/* ******* Payments View ***********/
+.payments_table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.payments_table td,
+.payments_table th {
+    border: solid 1px black;
+    text-align: left;
+    padding: 10px;
+}
+
+.payments_table tr:nth-child(2n) {
+    background-color: #ccc;
+}
+
+.payments_container a {
+    text-decoration: none;
+}
+
+.payments_container a:hover {
+    text-decoration: underline;
+}
+
+#create_payment {
+    text-align: right;
+    margin: 25px;
+}
+
+.payment_option {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.button-link {
+    background: none;
+    color: blue;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+}
+
+.button-link:hover {
+    border-bottom: 1px solid blue;
+}
+
+
+/****** Amount Display ********/
+#amount-to-pay {
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 5em;
+}
+
+#amount-to-pay>#amount {
+    font-size: 0.7em;
+    width: 200px;
+    background-color: #f2f2f2;
+    border: solid 1px #f2f2f2;
+    border-bottom: solid 1px black;
+}
+
+#event-name {
+    font-size: 1.2em;
+}
+
+/***********Media Queries ****************/
+@media only screen and (min-width: 675px) {
+    #payment__form {
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+
+    .payment-method {
+        width: 40vw;
+    }
+
+    .payment-method__credit,
+    .payment-method__paypal {
+        width: 60vw;
+    }
+}
+
+@media only screen and (min-width: 968px) {
+    .payment-method {
+        width: 30vw;
+    }
+
+    .payment-method__credit,
+    .payment-method__paypal {
+        width: 70vw;
+    }
+}
