@@ -15,7 +15,7 @@ require_once '../model/playlist_db.php';
 
 $name = filter_input(INPUT_POST, 'playlist__name');
 $desc = filter_input(INPUT_POST, 'playlist__desc', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-$date = $_POST['playlist__date'] ? $_POST['playlist__date'] : date('Y-m-d H:i:s');
+$date = $_POST['playlist__date'] ?? date('Y-m-d H:i:s');
 $event_id = $_POST['playlist__event'];
 
 if ($name == null || $desc == null) {

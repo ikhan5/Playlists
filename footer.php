@@ -5,15 +5,18 @@
                 <img alt="Logo for Get Together" src="Content/Images/bluegglogo.png" class="header-logo" id="footer-logo">
                 <div class="collapse navbar-collapse" id="navbarColor01">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link navbar-custom" href="#top">Back to top <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navbar-custom" href="#">Copyright</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navbar-custom" href="#">Privacy & Confidentiality</a>
-                        </li>
+                    <li class="nav-item active">
+                        <a class="nav-link navbar-custom" href="#top">Back to top <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-custom" href="#">Copyright</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-custom" href="db/listtodo.php">To Do</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-custom" href="#">Privacy & Confidentiality</a>
+                    </li>
                     </ul>
                 </div>
             </nav>
@@ -25,5 +28,4 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="scripts/script.js"></script>
 </body>
-
 </html>

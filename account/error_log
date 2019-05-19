@@ -1,0 +1,12 @@
+[16-May-2019 21:43:18 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'Playlists.users' doesn't exist in /home/omyo4zkubbao/public_html/playlists/model/account/account_db.php:100
+Stack trace:
+#0 /home/omyo4zkubbao/public_html/playlists/model/account/account_db.php(100): PDOStatement->execute()
+#1 /home/omyo4zkubbao/public_html/playlists/account/index.php(115): AccountDB::validateEmail('ikhan5@lakehead...')
+#2 {main}
+  thrown in /home/omyo4zkubbao/public_html/playlists/model/account/account_db.php on line 100
+[16-May-2019 21:45:38 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'Playlists.users' doesn't exist in /home/omyo4zkubbao/public_html/playlists/model/account/account_db.php:100
+Stack trace:
+#0 /home/omyo4zkubbao/public_html/playlists/model/account/account_db.php(100): PDOStatement->execute()
+#1 /home/omyo4zkubbao/public_html/playlists/account/index.php(115): AccountDB::validateEmail('')
+#2 {main}
+  thrown in /home/omyo4zkubbao/public_html/playlists/model/account/account_db.php on line 100
